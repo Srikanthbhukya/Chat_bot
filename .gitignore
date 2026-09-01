@@ -1,4 +1,16 @@
+# Environment variables / secrets
 .env
-chatbot.db
-chatbot.db-shm
-chatbot.db-wal
+.env.*
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
