@@ -1,5 +1,5 @@
 import streamlit as st
-from backend import workflow
+from backend import workflow,retrive_threads
 from langchain_core.messages import HumanMessage
 import uuid
 
@@ -38,7 +38,7 @@ if 'messages' not in st.session_state:
     st.session_state['messages']=[]
     
 if 'chat_thread' not in st.session_state:
-    st.session_state['chat_thread']=[]
+    st.session_state['chat_thread']=retrive_threads()
     
 
 chat_id(st.session_state['thread_id'])
